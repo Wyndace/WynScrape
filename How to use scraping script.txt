@@ -1,0 +1,39 @@
+In order to run the parser, you need to download one program and one add-on to it:
+- Python 3.10
+- pipenv
+
+How to check that you have it downloaded?
+1.) Open the folder with the script
+2.) Click on the line where the path to the folder is written
+3.) Erase everything and write "cmd", press enter
+4.) In the window that opens, write "python" and press enter
+5.) If Python 3.10 was written at the beginning of the next line, then everything is fine, the program is worth it.
+
+How and from where to download the Python 3.10 program?
+1.) Go to the official website "https://www.python.org/downloads/release/python-3102 /"
+2.) At the bottom of the site, there are several download links. Choose a name with your operating system and bit depth.
+3.) Open the installer and be sure to click the "Add Python 3.10 to PATH" checkbox, and choose either "Install Now", Customize installation, if you want to choose the path where to install.
+4.) Wait until it is installed and close the window.
+5.) Check that we have it downloaded.
+
+How to download the pipenv add-on for Python 3.10?
+1.) Open the folder with the script
+2.) Click on the line where the path to the folder is written
+3.) Erase everything and write "cmd", press enter
+4.) In the window that opens, write "pip install pipenv" and press enter.
+5.) If it issued the line "Successfully installed pipenv", then it was installed
+
+How to run a parsing script?
+
+If you have just unpacked the archive, then you need to install the libraries that are used in the script:
+1.) Open the folder with the script
+2.) Click on the line where the path to the folder is written
+3.) Erase everything and write "cmd", press enter
+4.) In the window that opens, write "pipenv install" and press enter.
+5.) If you saw the line "Success!", then everything is set
+
+If you have already installed everything, then:
+1.) Write pipenv run python main.py
+2.) Everything! The script is running :)
+
+The author of this guide: Alexander Vasiliev (https://github.com/Wyndace )
