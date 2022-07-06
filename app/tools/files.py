@@ -1,10 +1,14 @@
 from json import dump, loads
-from os import remove, path as ospath, makedirs, getcwd
+from os import remove, path as ospath, makedirs
+import shutil
 
 
 def delete_path(path):
     if ospath.exists(path):
-        remove(path)
+        if ospath.isdir(path):
+            shutil.rmtree(path)
+        else:
+            remove(path)
 
 
 def create_dir(path: str):
