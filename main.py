@@ -1,14 +1,15 @@
-from asyncio import run
-from time import monotonic
-from app.states.menu import menu
+from src.application.utils import menu
+from src.application import controllers
 
 
-async def main():
-    # Use initialization and main menu functions here
-    await menu(scheduler)
+def main():
+    items = (
+        "Показать заголовок страницы example.com",
+    )
+    choice = menu.multi_chooser_menu("Выберите пункт меню: ", items)
+    if choice == 1:
+        controllers.parserconsole()
 
 
-if __name__ == '__main__':
-    start = monotonic()
-    run(main())
-    print('Кол-во секунд, которые скрипт работал ->', monotonic() - start)
+if __name__ == "__main__":
+    main()
